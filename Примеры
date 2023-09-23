@@ -1,0 +1,8 @@
+@bot.callback_query_handler(func=lambda call: call.data == "educator")
+def but1_pressed(call):
+        bot.answer_callback_query(call.id, 'Введите ФИО прподавателя')
+
+Появляется надпись посередине окна Телеграмма
+
+
+code - направления (биология, мат, физика, химия)
