@@ -4,8 +4,10 @@ from db_predmet import list_predmet, list_bio_mag, list_math, list_physics, list
 import random
 import os
 
+with open('token.txt', 'r') as file:
+    token = file.read()
 
-bot = telebot.TeleBot("5817137852:AAGiMvHxhna8a83LxT0C0g6zpbct5g8F51k", parse_mode=None)
+bot = telebot.TeleBot(token, parse_mode=None)
 back_button = InlineKeyboardButton(text="Back", callback_data="MainMenu")
 
 
